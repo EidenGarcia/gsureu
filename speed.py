@@ -20,17 +20,11 @@ flip=0
 cam=cv2.VideoCapture('nvarguscamerasrc ! video/x-raw(memory:NVMM), width=1280, height=720, format=(string)NV12, framerate=(fraction)20/1 ! nvvidconv ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink' , cv2.CAP_GSTREAMER)
 while True:
     ret, frame=cam.read()
-    if robot.forward(spd_1):
+    if spd_1;
         cv2.putText(frame,"Speed m/s:"+str(dspd_1),(600,420),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,255),2)
         
-    elif robot.backward(spd_2):
+    else spd_2;
         cv2.putText(frame,"Speed m/s:"+str(dspd_2),(600,420),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,255),2) 
-    
-    elif robot.left(spd_1):
-        cv2.putText(frame,"Speed m/s:"+str(dspd_1),(600,420),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,255),2) 
-    
-    elif robot.right(spd_1):
-        cv2.putText(frame,"Speed m/s:"+str(dspd_1),(600,420),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,255),2)
     
     cv2.imshow('piCam',frame)
     if cv2.waitKey(1)==ord('q'):
