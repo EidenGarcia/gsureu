@@ -29,9 +29,9 @@ while True:
     if corners:
         for id in ids:
             if id == 3:
-                print("45-degree angle left: 3")
+                print("135-degree angle left: 3")
                 robot.left(0.3)
-                time.sleep(0.2)
+                time.sleep(0.5)
                 robot.stop()
                 break
 		
@@ -39,15 +39,6 @@ while True:
         for id in ids:
             if id == 4:
                 print("90-degree angle left: 4")
-                robot.left(0.3)
-                time.sleep(0.325)
-                robot.stop()
-                break
-		
-    if corners:
-        for id in ids:
-            if id == 9:
-                print("45-degree angle left: 9")
                 robot.left(0.3)
                 time.sleep(0.325)
                 robot.stop()
@@ -65,7 +56,16 @@ while True:
     if corners:
         for id in ids:
             if id == 6:
-                print("90-degree angle left: 6")
+                print("135-degree angle left: 6")
+                robot.left(0.3)
+                time.sleep(0.5)
+                robot.stop()
+                break
+		
+    if corners:
+        for id in ids:
+            if id == 7:
+                print("90-degree angle left: 7")
                 robot.left(0.3)
                 time.sleep(0.2)
                 robot.stop()
@@ -74,20 +74,93 @@ while True:
     if corners:
         for id in ids:
             if id == 8:
-                print("45-degree angle left: 8")
+                print("135-degree angle left: 8")
                 robot.left(0.3)
-                time.sleep(0.2)
+                time.sleep(0.5)
                 robot.stop()
                 break
 
     if corners:
         for id in ids:
-            if id == 7:
-                print("90-degree angle left: 7")
+            if id == 9:
+                print("135-degree angle left: 9")
                 robot.left(0.3)
-                time.sleep(0.325)
+                time.sleep(0.5)
                 robot.stop()
                 break
+		
+    if corners:
+        for id in ids:
+            if id == 10:
+                print("180-degree angle left: 10")
+                robot.left(0.3)
+                time.sleep(0.625)
+                robot.stop()
+                break
+		
+    if corners:
+        for id in ids:
+            if id == 11:
+                print("180-degree angle left: 11")
+                robot.left(0.3)
+                time.sleep(0.625)
+                robot.stop()
+                break
+		
+    if corners:
+        for id in ids:
+            if id == 12:
+                print("180-degree angle left: 12")
+                robot.left(0.3)
+                time.sleep(0.625)
+                robot.stop()
+                break
+		
+    if corners:
+        for id in ids:
+            if id == 13:
+                print("180-degree angle left: 13")
+                robot.left(0.3)
+                time.sleep(0.625)
+                robot.stop()
+                break
+		
+    if corners:
+        for id in ids:
+            if id == 14:
+                print("180-degree angle left: 14")
+                robot.right(0.3)
+                time.sleep(0.625)
+                robot.stop()
+                break
+		
+    if corners:
+        for id in ids:
+            if id == 15:
+                print("180-degree angle left: 15")
+                robot.right(0.3)
+                time.sleep(0.625)
+                robot.stop()
+                break
+		
+    if corners:
+        for id in ids:
+            if id == 16:
+                print("180-degree angle left: 16")
+                robot.right(0.3)
+                time.sleep(0.625)
+                robot.stop()
+                break
+		
+    if corners:
+        for id in ids:
+            if id == 17:
+                print("180-degree angle left: 17")
+                robot.rigth(0.3)
+                time.sleep(0.625)
+                robot.stop()
+                break
+		
     else:
         robot.forward(0.2)
         time.sleep(0.001)
