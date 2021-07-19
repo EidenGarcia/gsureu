@@ -20,16 +20,61 @@ while True:
     if corners:
         for id in ids:
             if id == 2:
-                print("90-degree angle left")
+                print("90-degree angle left: 2")
                 robot.left(0.3)
                 time.sleep(0.325)
                 robot.stop()
                 break
-    
+		
+    if corners:
+        for id in ids:
+            if id == 3:
+                print("45-degree angle left: 3")
+                robot.left(0.3)
+                time.sleep(0.2)
+                robot.stop()
+                break
+		
+    if corners:
+        for id in ids:
+            if id == 4:
+                print("90-degree angle left: 4")
+                robot.left(0.3)
+                time.sleep(0.325)
+                robot.stop()
+                break
+		
+    if corners:
+        for id in ids:
+            if id == 9:
+                print("45-degree angle left: 9")
+                robot.left(0.3)
+                time.sleep(0.325)
+                robot.stop()
+                break
+		
+    if corners:
+        for id in ids:
+            if id == 5:
+                print("90-degree angle left: 5")
+                robot.left(0.3)
+                time.sleep(0.325)
+                robot.stop()
+                break
+		
+    if corners:
+        for id in ids:
+            if id == 6:
+                print("90-degree angle left: 6")
+                robot.left(0.3)
+                time.sleep(0.2)
+                robot.stop()
+                break
+		
     if corners:
         for id in ids:
             if id == 8:
-                print("45-degree angle left")
+                print("45-degree angle left: 8")
                 robot.left(0.3)
                 time.sleep(0.2)
                 robot.stop()
@@ -38,7 +83,7 @@ while True:
     if corners:
         for id in ids:
             if id == 7:
-                print("90-degree angle left")
+                print("90-degree angle left: 7")
                 robot.left(0.3)
                 time.sleep(0.325)
                 robot.stop()
